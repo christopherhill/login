@@ -1,0 +1,201 @@
+
+/* thin reset */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+form, input, button {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+/* styles */
+h2 {
+  font-size: 14px;
+}
+
+h2, button { 
+  color: #e8e8e8;
+}
+
+button { 
+ }
+
+.dialog {
+  position: absolute;
+  width: 500px;
+  padding: 12px 0 12px;
+}
+
+#dialog-a {
+  left: 50px;
+}
+
+#dialog-b {
+  right: 50px;
+}
+
+.dialog-label {
+  margin-bottom: 16px
+}
+
+.login-form {
+  color: #e8e8e8;
+  width: 300px;
+  margin: 0px auto;
+}
+
+.full-width {
+  clear: both;
+  float: none;
+  margin-bottom: 20px;
+}
+
+input.full-width {
+  width: 276px;
+  padding: 4px 12px 4px 12px;
+}
+
+button.full-width {
+  width: 300px;
+}
+
+button:hover {
+  background: #992222;
+}
+
+.rounded {
+  border-radius: 2px;
+}
+
+input {
+  -webkit-transition: -webkit-box-shadow .5s ease-out;
+  -moz-transition: -moz-box-shadow: .5s ease-out;
+  border:1px solid #000;
+  -webkit-box-shadow:0 0 6px #000;
+  -moz-box-shadow:0 0 5px #000;
+  box-shadow:0 0 5px #000;
+  outline: none;
+}
+
+button {
+   cursor: pointer;
+  -webkit-transition: background .5s ease-out, -webkit-box-shadow .5s ease-out;
+  -moz-transition: background .5s ease-out, -moz-box-shadow .5s ease-out;
+  border:1px solid #000;
+  -webkit-box-shadow:0 0 6px #222;
+  -moz-box-shadow:0 0 5px #222;
+  box-shadow:0 0 5px #222;
+  outline: none; 
+}
+
+input:focus, button:focus {
+  border:1px solid #fafafa;
+  -webkit-box-shadow:0 0 6px #ffa399;
+  -moz-box-shadow:0 0 5px #ffa399;
+  box-shadow:0 0 5px #ffa399;
+  outline: none;
+}
+
+input.medium-height {
+  height: 30px
+}
+
+button.medium-height {
+  height: 38px;
+}
+
+.dark {
+  background: #232323;  
+}
+
+.red {
+  background: #db4a39;
+}
+
+.placeholder {
+  color: #aaa;
+}
+
+.container-overlay {
+  margin-top: 50px;
+  top: 0px;
+  height: 1200px;
+  width: 100%;
+  opacity: .8;
+  background: #000;
+  display: none;
+  z-index: 1;
+  position: absolute;
+}
+
+.dialog {
+  display: none;
+  margin: 200px auto;
+  z-index: 1000;
+}
+
+.top-nav {
+  height: 50px;
+  width: 100%;
+  background: #e7e7e7;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+}
+
+.top-nav ul {
+  margin-top: 16px;
+  list-style-type: none;
+}
+
+.top-nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.top-nav ul li a {
+  text-decoration: none;
+  clear: none;
+  color: #1e1e1e;
+  transition: color .5s ease-out;
+}
+
+.top-nav ul li a:hover {
+  color: #ffa399;
+}
+
+.close {
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 460px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  transition: background .5s ease-out;
+}
+
+.close:hover {
+  background: #db4a39;
+}
+
+.center {
+  text-align: center;
+  margin: 0px auto;
+}
+
+.instructions {
+  color: #1e1e1e;
+  margin-top: 100px;
+  width: 60%;
+}

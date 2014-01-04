@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <script src="js/polyfill.js"></script>
+  <script src="js/main.js"></script>
+  <link href="css/styles.css">
+  <meta charset=utf-8 />
+  <title>Apple Login Example</title>
+</head>
+
+<body>
+  <nav class="top-nav">
+    <ul>
+      <li><a id="link-a" href="#">Dialog A</a></li>
+      <li><a id="link-b" href="#">Dialog B</a></li>
+    </ul>
+  </nav>
+  <div class="container-overlay"></div>
+  <div class="container">
+    <p class="center instructions">
+      The Login class within the Javascript code manages multiple instances of a login modal. You can see how it works by clicking on the two menu items in the navigation bar. Close the dialogs by clicking in the upper right corner of the dialog (the mouse will change to a pointer, so as not to alter the given visual mock-up)
+    </p>
+  </div>
+  <div id="dialog-a" class="dialog dark rounded">
+    <div class="close rounded"></div>
+    <form class="login-form">
+      <h2 class="dialog-label">User Login</h2>
+      <input class="full-width medium-height rounded" type="text" placeholder="Apple ID" autocomplete="off">
+      <input class="full-width medium-height rounded" type="password" placeholder="Password " autocomplete="off">
+      <button class="full-width medium-height rounded red" >Login to your account</button>
+    </form>
+  </div>
+  
+  <div id="dialog-b" class="dialog dark rounded">
+    <div class="close rounded"></div>
+    <form class="login-form">
+      <h2 class="dialog-label">User Login (Second Instance)</h2>
+      <input class="full-width medium-height rounded" type="text" placeholder="Apple ID" autocomplete="off">
+      <input class="full-width medium-height rounded" type="password" placeholder="Password " autocomplete="off">
+      <button class="full-width medium-height rounded red" >Login to your account</button>
+    </form>
+  </div>
+  <!--[if lte IE9]>
+  <script type="text/javascript">
+    Window.ltie9 = true;
+  </script>
+  <![endif]-->
+</body>
+</html>
