@@ -3,12 +3,12 @@
  * IE9 does not support the placeholder attribute
  */
 
-(function($) {
+$(document).ready(function() {
 
   Window.ltie9 = Window.ltie9 || false;
   
   if (Window.ltie9) {
-    
+
     // patch the jQuery val() method
     var originalValFn = $.fn.val;
     $.fn.val = function(value) {
@@ -21,6 +21,7 @@
     };
     
     $('[placeholder]').focus(function() {
+      console.log('here');
       var input = $(this);
       if (input.val() == input.attr('placeholder')) {
         input.val('');
@@ -36,4 +37,4 @@
 
   }
 
-})(jQuery);
+});

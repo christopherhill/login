@@ -4,10 +4,16 @@
 
 <head>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <!--[if lte IE9]>
+  <script type="text/javascript">
+    Window.ltie9 = true;
+  </script>
+  <![endif]-->
   <script src="js/polyfill.js"></script>
+  <script src="js/login.js"></script>
   <script src="js/main.js"></script>
-  <link href="css/styles.css">
-  <meta charset=utf-8 />
+  <link href="css/styles.css" type="text/css" rel="stylesheet">
+  <meta charset="utf-8">
   <title>Apple Login Example</title>
 </head>
 
@@ -33,7 +39,6 @@
       <button class="full-width medium-height rounded red" >Login to your account</button>
     </form>
   </div>
-  
   <div id="dialog-b" class="dialog dark rounded">
     <div class="close rounded"></div>
     <form class="login-form">
@@ -43,10 +48,5 @@
       <button class="full-width medium-height rounded red" >Login to your account</button>
     </form>
   </div>
-  <!--[if lte IE9]>
-  <script type="text/javascript">
-    Window.ltie9 = true;
-  </script>
-  <![endif]-->
 </body>
 </html>
